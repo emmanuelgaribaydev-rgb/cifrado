@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cifrado Cesar</h1>
+    
+    <div class="control">
+        <label for="desplazamiento">Rotación (Clave): </label>
+        <input type="number" id="desplazamiento" value="0" min="0" max="25">
+    </div>
+    
+    <div class="cifrado-container">
+        <div>
+            <label for="textoOriginal">Texto Original:</label><br>
+            <textarea id="textoOriginal" rows="4" cols="25" placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        <div>
+            <label for="textoCifrado">Texto Cifrado:</label><br>
+            <textarea id="textoCifrado" rows="4" cols="25" readonly placeholder="Aquí aparecerá el cifrado..."></textarea>
+        </div>
+    </div>
+
+    <div class="rueda-cesar">
+        <div class="disco-externo" id="discoExt"></div>
+        <div class="disco-interno" id="discoInt"></div>
+        <div class="centro"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
